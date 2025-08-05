@@ -1,3 +1,5 @@
+import boto3 
+
 def download_file_from_s3(bucket_name, s3_key, local_path):
     """
     Download a file from an S3 bucket to a local directory.
