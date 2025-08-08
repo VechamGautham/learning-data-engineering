@@ -77,7 +77,7 @@ def main():
 
         print(f"Data has been saved successfully to {filename}.json")
     else:
-        print(f"No data was available to be saved.")
+        print(f"No data was available to be saved")
 
 
 if __name__ == "__main__":
