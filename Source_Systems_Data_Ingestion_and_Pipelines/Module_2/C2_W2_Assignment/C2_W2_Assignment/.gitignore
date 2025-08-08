@@ -1,0 +1,25 @@
+# Environment & Secrets
+.env
+env
+*.env
+.cache
+*.cache
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
