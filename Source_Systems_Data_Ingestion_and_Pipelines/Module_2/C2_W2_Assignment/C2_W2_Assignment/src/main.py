@@ -47,7 +47,7 @@ def main():
     )
 
     # Getting information about each album
-    print(f"Getting information about each album")
+    print("Getting information about each album")
 
     album_items = {}
 
@@ -77,7 +77,7 @@ def main():
 
         print(f"Data has been saved successfully to {filename}.json")
     else:
-        print(f"No data was available to be saved")
+        print("No data was available to be saved")
 
 
 if __name__ == "__main__":
