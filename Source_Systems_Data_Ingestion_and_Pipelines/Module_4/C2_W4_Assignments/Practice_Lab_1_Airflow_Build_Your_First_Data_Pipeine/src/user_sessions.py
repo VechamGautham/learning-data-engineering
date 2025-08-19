@@ -1,13 +1,12 @@
 import datetime as dt
 import json
 import logging
-from random import randint
 
 import boto3
 import requests
-from airflow import DAG
-from airflow.operators.dummy import EmptyOperator
-from airflow.operators.python import PythonOperator
+from airflow import DAG 
+from airflow.operators.dummy import EmptyOperator  # type: ignore
+from airflow.operators.python import PythonOperator  # type: ignore 
 
 ############################# START OF EXERCISE 1 #############################
 
@@ -233,7 +232,7 @@ with DAG(
 
         for session in session_info:
             user_id = session["user_id"]
-            print(f"Getting data from ")
+            print(f"Getting data from {session_info}") 
             response = requests.get(
                 f"http://174.129.152.230:8000/users_by_id?user_ids={user_id}"
             )
