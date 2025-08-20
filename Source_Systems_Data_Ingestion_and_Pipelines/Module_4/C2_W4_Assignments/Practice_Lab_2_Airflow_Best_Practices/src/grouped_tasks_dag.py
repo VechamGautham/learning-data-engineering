@@ -1,12 +1,12 @@
 import datetime as dt
 import re
 
-import pandas as pd
+import pandas as pd   # type: ignore
 from airflow import DAG
 from airflow.models import Variable
-from airflow.operators.dummy import DummyOperator
-from airflow.operators.python_operator import PythonOperator
-from airflow.providers.amazon.aws.transfers.sql_to_s3 import SqlToS3Operator
+from airflow.operators.dummy import DummyOperator  # type: ignore
+from airflow.operators.python_operator import PythonOperator  # type: ignore
+from airflow.providers.amazon.aws.transfers.sql_to_s3 import SqlToS3Operator  # type: ignore
 from airflow.utils.context import Context
 from airflow.utils.task_group import TaskGroup
 
